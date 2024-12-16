@@ -1,6 +1,7 @@
 # MovieFest
 ## Description
 MovieFest – your personal guide to the world of cinema: add, rate, edit and save your favorite movies.  
+
 Whether you're planning a cozy night in or your next movie marathon – MovieFest is the perfect companion!  
 
 ### Features
