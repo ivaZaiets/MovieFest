@@ -1,8 +1,6 @@
 @import "../variables.scss";
 
 .modal-dialog {
-  // --bs-modal-width: 450px;
-
   .modal-content {
     --bs-modal-color: #{$white};
     --bs-modal-bg: #{$light-dark};
@@ -55,7 +53,7 @@
           }
 
           &:hover {
-             --bs-border-color: #{$gray};
+            --bs-border-color: #{$gray};
             box-shadow: none;
           }
         }

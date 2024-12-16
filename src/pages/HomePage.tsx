@@ -35,7 +35,7 @@ const HomePage = () => {
   }, [debouncedFetchData, query, dispatch, currentPage]);
 
   useEffect(() => {
-    if (query) setCurrentPage(1);
+    setCurrentPage(1);
   }, [query]);
 
   return (
