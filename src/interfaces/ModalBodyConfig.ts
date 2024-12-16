@@ -17,7 +17,7 @@ export interface Input extends Base {
   placeholder?: string;
   value?: string | number;
   onChange?: (
-    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void;
   onKeyDown?: React.KeyboardEventHandler<
     HTMLInputElement | HTMLTextAreaElement
