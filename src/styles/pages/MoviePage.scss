@@ -1,0 +1,22 @@
+@import "../variables.scss";
+
+.big-card-container {
+  .card {
+    border-color: rgba($white, 0.4);
+
+    &--big {
+      background: $light-dark;
+      border-color: rgba($white, 0.15);
+      box-shadow: 2px 0px 30px rgba($primary, 0.4);
+
+      .card-title--big {
+        color: $light-primary;
+        text-shadow: 2px 0 16px $primary;
+      }
+
+      .card-text {
+        color: $white;
+      }
+    }
+  }
+}

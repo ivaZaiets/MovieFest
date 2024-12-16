@@ -1,0 +1,41 @@
+@import "../variables.scss";
+
+.pagination {
+  align-items: center;
+  gap: 10px;
+  margin-block: 40px 20px;
+  user-select: none;
+
+  .disabled-page {
+    a {
+      cursor: not-allowed;
+    }
+
+    svg use {
+      fill: rgba($white, 0.15);
+    }
+  }
+
+  .page {
+    min-width: 40px;
+    text-align: center;
+    color: $gray;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    a {
+      display: inline-block;
+      width: 100%;
+      padding: 6px 10px;
+    }
+  }
+
+  .page:hover,
+  .active-page {
+    color: $white;
+    border-color: $light-primary;
+    box-shadow: 0 0 0 0.25rem rgba($primary, 0.25);
+  }
+}

@@ -1,0 +1,144 @@
+@import "../variables.scss";
+
+.navbar-container {
+  .navbar {
+    --bs-navbar-padding-y: 20px;
+    --bs-navbar-hover-color: #{$light-primary};
+    --bs-navbar-active-color: #{$light-primary};
+
+    box-shadow: 2px 0px 30px rgba($primary, 0.4);
+  }
+
+  .navbar-brand {
+    --bs-navbar-brand-color: #{$white};
+    --bs-navbar-brand-hover-color: #{$white};
+    --bs-navbar-brand-margin-end: 40px;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  .bg-body-tertiary {
+    --bs-tertiary-bg-rgb: 33, 32, 30;
+  }
+
+  .navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: #{$white};
+      border-radius: 3px;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0;
+        transform-origin: left center;
+      }
+
+      &:nth-child(2) {
+        top: 8px;
+        transform-origin: left center;
+      }
+
+      &:nth-child(3) {
+        top: 16px;
+        transform-origin: left center;
+      }
+    }
+
+    &:not(.collapsed) span:nth-child(1) {
+      transform: rotate(45deg);
+      top: 0px;
+      left: 4px;
+    }
+
+    &:not(.collapsed) span:nth-child(2) {
+      width: 0;
+      opacity: 0;
+    }
+
+    &:not(.collapsed) span:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 17px;
+      left: 4px;
+    }
+  }
+
+  .nav-link {
+    --bs-nav-link-color: #{$white};
+
+    &:hover,
+    &.active {
+      text-shadow: 2px 0 16px $primary;
+    }
+  }
+
+  .form {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
+    .form-control {
+      --bs-border-radius: 8px;
+      --bs-body-bg: #{$dark};
+      --bs-body-color: #{$gray};
+      --bs-border-color: #{$gray};
+      padding-block: 8px;
+      padding-inline: 10px 40px;
+
+      &::placeholder {
+        color: $gray;
+      }
+
+      &:focus {
+        --bs-body-color: #{$white};
+
+        &::placeholder {
+          color: rgba($white, 0.8);
+        }
+      }
+
+      &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        appearance: none;
+      }
+    }
+
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      transform: translateY(-50%);
+    }
+
+    &:hover .form-control {
+      --bs-body-color: #{$white};
+      --bs-border-color: #{$light-primary};
+      box-shadow: 0 0 0 0.25rem rgba($primary, 0.25);
+
+      &::placeholder {
+        color: rgba($white, 0.8);
+      }
+    }
+
+    &:hover .search-icon use,
+    .form-control:focus + .search-icon use {
+      stroke: $light-primary;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "./variables.scss";
+@import "bootstrap/scss/bootstrap";
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $dark;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba($gray, 0.4);
+  border-radius: 3px;
+  cursor: grab;
+}
+
+.h-85vh {
+  height: 85vh;
+}

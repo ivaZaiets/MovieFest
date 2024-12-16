@@ -1,0 +1,200 @@
+@import "../variables.scss";
+
+.modal-dialog {
+  // --bs-modal-width: 450px;
+
+  .modal-content {
+    --bs-modal-color: #{$white};
+    --bs-modal-bg: #{$light-dark};
+    --bs-modal-border-color: #{$light-primary};
+
+    box-shadow: 2px 0px 30px rgba($primary, 0.4);
+
+    .modal-header {
+      --bs-modal-header-border-color: #{$light-primary};
+
+      .close-btn {
+        &:hover svg use {
+          stroke: $light-primary;
+        }
+      }
+    }
+
+    .modal-body {
+      .form-control {
+        --bs-body-color: #{$white};
+        --bs-border-color: #{$gray};
+        --bs-body-bg: #{$dark};
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          --bs-border-color: #{$light-primary};
+          box-shadow: 2px 0px 20px rgba($primary, 0.4);
+        }
+
+        &--file {
+          padding-left: 115px;
+          cursor: pointer;
+        }
+
+        &--textarea {
+          resize: none;
+        }
+
+        &--num {
+          width: 65px;
+          caret-color: transparent;
+          cursor: default;
+        }
+
+        &--disabled {
+          --bs-secondary-bg: #{$dark};
+
+          &::placeholder {
+            color: rgba($white, 0.2);
+          }
+
+          &:hover {
+             --bs-border-color: #{$gray};
+            box-shadow: none;
+          }
+        }
+      }
+
+      .file-btn {
+        background: $dark-gray;
+        border: 1px solid $gray;
+        border-radius: 6px 0 0 6px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .form-container:hover .file-btn,
+      .form-container:hover .form-control--file {
+        --bs-border-color: #{$light-primary};
+        box-shadow: 2px 0px 20px rgba($primary, 0.4);
+        border-color: $light-primary;
+      }
+
+      .react-datepicker {
+        &__input-container {
+          input {
+            padding: 6px 12px;
+            border: 1px solid $gray;
+            border-radius: 6px;
+            outline: none;
+            background: $dark;
+            transition: all 0.3s ease-in-out;
+
+            &:hover,
+            &:focus {
+              border-color: $light-primary;
+              box-shadow: 2px 0px 20px rgba($primary, 0.4);
+            }
+          }
+        }
+
+        &__navigation-icon--previous::before,
+        &__navigation-icon--next::before {
+          border-color: $white;
+        }
+
+        &__header {
+          border-bottom: none;
+          background: $light-dark;
+          box-shadow: 2px 0px 20px rgba($primary, 0.4);
+        }
+
+        &__day-names {
+          margin-top: 6px;
+        }
+
+        &__current-month,
+        &__day-name,
+        &__day {
+          color: $white;
+        }
+
+        &__day {
+          &--selected,
+          &--keyboard-selected,
+          &:hover {
+            background: $light-primary;
+          }
+        }
+
+        &__month-container {
+          border: 1px solid $light-primary;
+          border-radius: 4px;
+          background: $dark;
+          box-shadow: 2px 0px 20px rgba($primary, 0.4);
+        }
+
+        &__triangle {
+          fill: $dark;
+          color: $dark;
+          stroke: $light-primary;
+        }
+      }
+
+      .css-13cymwt-control,
+      .css-t3ipsp-control {
+        background: $dark;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          border-color: $light-primary;
+          box-shadow: 2px 0px 20px rgba($primary, 0.4);
+        }
+      }
+
+      .css-13cymwt-control {
+        border-color: $gray;
+      }
+
+      .css-1dimb5e-singleValue,
+      .css-9jq23d,
+      .css-1cfo1cf {
+        color: $white;
+      }
+
+      .css-t3ipsp-control {
+        border-color: $light-primary;
+        box-shadow: 2px 0px 20px rgba($primary, 0.4);
+      }
+
+      .css-t3ipsp-control .css-tj5bde-Svg,
+      .css-13cymwt-control:hover .css-tj5bde-Svg {
+        fill: $light-primary;
+        stroke: $light-primary;
+      }
+
+      .css-1p3m7a8-multiValue,
+      .css-v7duua {
+        background: transparent;
+      }
+
+      .css-1nmdiq5-menu {
+        background: $dark;
+        border: 1px solid $light-primary;
+        box-shadow: 2px 0px 20px rgba($primary, 0.4);
+
+        .css-qr46ko {
+          max-height: 150px;
+        }
+
+        .css-d7l1ni-option,
+        .css-tr4s17-option {
+          background: transparent;
+          color: $light-primary;
+          text-shadow: 2px 0 16px $primary;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .modal-footer {
+      --bs-modal-footer-border-color: #{$light-primary};
+    }
+  }
+}

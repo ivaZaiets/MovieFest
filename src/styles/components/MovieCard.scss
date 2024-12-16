@@ -1,0 +1,33 @@
+@import "../variables.scss";
+
+.card-container {
+  .card {
+    height: 480px;
+    width: 220px;
+    color: $white;
+    border: 1px solid $gray;
+    background-color: $light-dark;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+      border-color: $light-primary;
+      box-shadow: 0 0 0 0.25rem rgba($primary, 0.25);
+    }
+
+    .card-img-top {
+      width: 218px;
+      height: 328px;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .card-title {
+      --bs-card-title-spacer-y: 16px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}
