@@ -30,8 +30,14 @@ const WatchList = () => {
   );
 
   useEffect(() => {
-    if (query) setCurrentPage(1);
+    setCurrentPage(1);
   }, [query]);
+
+  useEffect(() => {
+    if (paginateWatchList.length === 0) {
+      setCurrentPage(1);
+    }
+  }, [paginateWatchList]);
 
   return (
     <>
