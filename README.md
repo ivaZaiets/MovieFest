@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
+# MovieFest
+### Description
+MovieFest – your personal guide to the world of cinema: add, rate, edit and save your favorite movies.  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Whether you're planning a cozy night in or your next movie marathon – MovieFest is the perfect companion!  
 
-Currently, two official plugins are available:
+### Features
+* **Movie Browsing**: Browse a selection of 500 popular films
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Convenient Pagination**: Navigate effortlessly through pages with intuitive pagination
 
-## Expanding the ESLint configuration
+* **Real-Time Search**: Enjoy a seamless and convenient real-time search experience
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* **Add to Watchlist**: Easily save movie to your watchlist
 
-- Configure the top-level `parserOptions` property like this:
+* **Create New Movie**: Add custom movie directly to your watchlist
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+* **Edit Movie**: Modify movie details ( poster, title, description, etc. )
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+* **Manage Movie**: Delete custom movie or unfavorite existing one
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+* **View Movie Details**: Explore detailed information about each movie
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+* **Beautiful & Responsive Design**: Experience a visually stunning and fully responsive layout
+
+### Tech Stack
+* `React`
+* `Redux Toolkit`
+* `TypeScript`
+* `Bootstrap`
+* `SCSS`
+
+### Links
+[DEMO](https://ivazaiets.github.io/movie-fest/)  
+
+### Setup
+* git clone https://github.com/ivaZaiets/movie-fest.git
+* $ npm install
+* $ npm run dev
+
+### Author
+[Telegram](https://t.me/swugre)  
+[LinkedIn](https://www.linkedin.com/in/ivanna-zaiets-6122532a0/)
