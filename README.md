@@ -25,7 +25,7 @@ Whether you're planning a cozy night in or your next movie marathon – MovieFes
 
 ### Tech Stack
 * `React`
-* `Redux Toolkit`,
+* `Redux Toolkit`
 * `TypeScript`
 * `Bootstrap`
 * `SCSS`
