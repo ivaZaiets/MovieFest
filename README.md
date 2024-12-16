@@ -5,13 +5,21 @@ Whether you're planning a cozy night in or your next movie marathon – MovieFes
 
 ### Features
 * **Movie Browsing**: Browse a selection of 500 popular films
+
 * **Convenient Pagination**: Navigate effortlessly through pages with intuitive pagination
+
 * **Real-Time Search**: Enjoy a seamless and convenient real-time search experience
+
 * **Add to Watchlist**: Easily save movie to your watchlist
+
 * **Create New Movie**: Add custom movie directly to your watchlist
+
 * **Edit Movie**: Modify movie details ( poster, title, description, etc. )
+
 * **Manage Movie**: Delete custom movie or unfavorite existing one
+
 * **View Movie Details**: Explore detailed information about each movie
+
 * **Beautiful & Responsive Design**: Experience a visually stunning and fully responsive layout
 
 ### Tech Stack
